@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Frontend lab12</title>
+    <script src="js/jquery-3.6.2.min.js" defer></script>
+	<script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="difficulty-modal" class="modal">
+        <div class="modal-inner">
+            <div class="text">Оберіть рівень тесту:</div>
+            <select>
+                <option value="easy">Простий</option>
+                <option value="intermediate">Середній</option>
+                <option value="advanced">Просунутий</option>
+            </select>
+            <button>Продовжити</button>
+        </div>
+    </div>
+    <div id="again-modal" class="modal">
+        <div class="modal-inner">
+            <div class="text">Message</div>
+            <button>Зіграти ще раз</button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="stat">
+            <div class="correct"></div>
+            <div class="incorrect"></div>
+        </div>
+        <div id="guess-block">
+        <img src="img/placeholder.jpg" alt="none"/>
+            <div class="word"></div>
+        </div>
+        <div id="card-nav">
+            <span class="left"><</span>
+            <div class="card-pos">1/10</div>
+            <span class="right">></span>
+        </div>
+        <div id="enter">
+            <input type="text" placeholder="Введіть переклад">
+            <button id="submit">Наступне</button>
+        </div>
+    </div>
+</body>
+</html>
